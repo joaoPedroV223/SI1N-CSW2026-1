@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1> Principais Formatações</h1>
+    
+<H2>Negrito/Destaque</H2>
+<H3><b>Na Frase temos uma parte do texto em negrito usando tag B não semantica</u></H3>
+<H3><strong>Na Frase temos uma parte do texto em negrito usando tag strong com semantica</strong></H3>
+<H2>Italico / Ênfase</H2>
+<h3>Na Frase temos uma parte do texto em <i>italico</i> usando tag I não semantica</h3>
+<H3>Na Frase temos uma parte do texto em <em>italico</em> usando tag EM não semantica</H3>
+<h2>Texto Marcador</h2>
+<h3>Aqui vamos usar um texto com destaque de <mark> marcador de texto</mark> usando mark</h3>
+<H3>Aqui vamos usar um texto com destaque de <mark> marcador de texto</mark> usando mark</H3>
+
+<h2>Texto Grande e pequeno</h2>
+<h3>Estamos trabalhando com <big>Texto grande</big> e um <small>Texto pequeno</small> nesta frase</h3>
+<h2>Texto Deletado</h2>
+<h3> Neste paragrafo vamos trabalhar com um texto <del>que foi excluido da frase</del>  (forma semantica)</h3>
+<H2>Texto Inserido</H2>
+<h3>Nesta frase vamos demonstrar como destacar um texto <ins>Inserido na frase</ins> de forma semantica</h3>
+<h3>Nesta frase vamos demonstrar como destacar um texto <u>Inserido na frase</u> de forma não semantica</h3>
+<h2>Texto sobrescrito</h2>
+<H3>vamos demonstrar uma formula da equação do segundo grau <sup>ax²+ bx + c = 0</sup> usando tag sup</H3>
+<h2>Texto subrescrito</h2>
+<H3>vamos demonstrar o texto subescrito com a formula da agua <sub>H2O</sub></H3>
+<H2> Trecho de Codigo fonte</H2>
+<h3>Neste exemplo vou domenstrar um trecho do codigo</h3>
+<h3>inseridoo comando document.getElementById('edtCodigo) que é um comando java script</h3>
+<h3>inserindo um longo codigo me python</h3>
+
+<blockquote>
+    <pre><code> import math
+    
+    # Entrada dos coeficientes
+    a = float(input("Digite o valor de a: "))
+    b = float(input("Digite o valor de b: "))
+    c = float(input("Digite o valor de c: "))
+    
+    # Verifica se é realmente equação do segundo grau
+    if a == 0:
+        print("Não é uma equação do segundo grau.")
+    else:
+        # Cálculo do discriminante (delta)
+        delta = b**2 - 4*a*c
+        print(f"Delta = {delta}")
+    
+        if delta > 0:
+            x1 = (-b + math.sqrt(delta)) / (2*a)
+            x2 = (-b - math.sqrt(delta)) / (2*a)
+            print(f"Duas raízes reais: x1 = {x1}, x2 = {x2}")
+    
+        elif delta == 0:
+            x = -b / (2*a)
+            print(f"Uma raiz real: x = {x}")
+    
+        else:
+            print("Não existem raízes reais.")</code></pre>
+</blockquote>
+
+        <h2>Citações (quotation) simples</h2>
+        <h3>Segundo Steve Jobs "A tecnologia move o mundo "</h3>
+        <h2>Citações Completas (livros)</h2>
+        <H3>Segundo Sandra Kussunoki no seu livro A dança do ventre </H3>
+        <h4>Dados existentes sobre intervenções cirúrgicas nos corpos contemporâneos, 
+            visando à obtenção de um corpo mais próximo do padrão estético, 
+            tais como lipoaspiração, próteses de silicone, entre outras, 
+            comprovam essa busca obsessiva pelo ideal de perfeição, que é baseado 
+            principalmente na magreza.</h4>
+            <H2> Abreviações</H2>
+            <h3>Estamos estudando HTML e CSS</h3>
+            <H2>Texto invertido</H2>
+            <h3>estou estudando HTML</a></h3>
+            <h3><bdo dir=rtl>estou estudando HTML</bdo></h3>
+            <blockquote><cite>https://www.google.com/search?q=uvv&rlz=1C1AJCO_pt-PTBR1204BR1204&oq=&gs_lcrp=EgZjaHJvbWUqCQgHEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQkyMTg1ajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8</cite></blockquote>
+
+
+</body>
+</html>
