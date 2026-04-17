@@ -1,0 +1,22 @@
+
+body {
+    background-color: lightblue;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1 { color: #2f4f4f; }
+.txt-purple { color: purple; }
+.txt-blue { color: blue; }
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.my-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
