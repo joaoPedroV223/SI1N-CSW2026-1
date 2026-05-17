@@ -1,0 +1,123 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: large;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Nível Médio */
+.medio {
+  padding: 20px;
+  color: rgb(7, 17, 73);
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 5px solid rgb(3, 12, 63);
+  width: 450px;
+  height: 60px;
+}
+
+.init {
+  padding: 20px;
+}
+
+.quadrado {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(3, 12, 63);
+  border-radius: 5px;
+}
+
+.linhas {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+.linha {
+  width: 45px;
+  height: 15px;
+  background-color: rgb(3, 12, 63);
+  border-radius: 10px;
+}
+
+.requisitos {
+  width: 450px;
+  height: 135px;
+  border: 2px solid rgb(7, 17, 73);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Nível Difícil */
+.galeria {
+  width: 450px;
+  height: 200px;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.top {
+  width: 90px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(131, 131, 131);
+  background-color: rgb(185, 185, 185);
+}
+
+.sec {
+  width: 62px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(131, 131, 131);
+  background-color: rgb(185, 185, 185);
+}
+
+.secdif {
+  width: 90px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(131, 131, 131);
+  background-color: rgb(185, 185, 185);
+}
+
+.ter {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(131, 131, 131);
+  background-color: rgb(185, 185, 185);
+}
