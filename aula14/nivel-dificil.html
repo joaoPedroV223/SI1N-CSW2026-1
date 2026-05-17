@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nível Difícil - Galeria Dinâmica | SI1N - João Pedro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+
+    header {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    header .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.95rem;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+   
+    .area-central {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+
+    
+    aside {
+      background-color: #162d4a;
+      color: white;
+      width: 200px;
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      padding: 24px 0;
+    }
+
+    aside h3 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #aac4e0;
+      padding: 0 20px 12px;
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside ul li {
+      padding: 12px 20px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: background-color 0.2s;
+    }
+
+    aside ul li:hover {
+      background-color: #2e5a8f;
+    }
+
+    aside ul li.ativo {
+      background-color: #2e5a8f;
+      border-left: 4px solid #f0c040;
+    }
+
+    
+    main {
+      flex-grow: 1;
+      padding: 28px;
+      overflow-y: auto;
+    }
+
+    main h2 {
+      font-size: 1.3rem;
+      color: #1e3a5f;
+      margin-bottom: 20px;
+    }
+
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .galeria-card {
+      background-color: white;
+      border: 2px solid #1e3a5f;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .galeria-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .galeria-card .icone {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .galeria-card h3 {
+      font-size: 1rem;
+      color: #1e3a5f;
+      text-align: center;
+    }
+
+    .galeria-card p {
+      font-size: 0.85rem;
+      color: #666;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #1e3a5f;
+      color: #ccc;
+      text-align: center;
+      padding: 14px;
+      font-size: 0.85rem;
+      width: 100%;
+    }
+
+    
+    .link-voltar {
+      margin-top: 30px;
+    }
+
+    .link-voltar a {
+      color: #1e3a5f;
+      font-size: 0.95rem;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid #1e3a5f;
+      padding: 10px 24px;
+      border-radius: 8px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .link-voltar a:hover {
+      background-color: #1e3a5f;
+      color: white;
+    }
+
+    
+    @media (max-width: 600px) {
+      .area-central {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        min-width: unset;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+      }
+
+      aside ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0 10px;
+      }
+
+      aside ul li {
+        padding: 8px 14px;
+        border-radius: 6px;
+        background-color: #2e5a8f;
+      }
+
+      aside h3 {
+        width: 100%;
+        padding-bottom: 6px;
+      }
+
+      .galeria-card {
+        width: 100%;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="logo">🎓 Painel SI1N</div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Perfil</a>
+      <a href="#">Sair</a>
+    </nav>
+  </header>
+
+ 
+  <div class="area-central">
+
+
+    <aside>
+      <h3>Menu</h3>
+      <ul>
+        <li class="ativo">🏠 Início</li>
+        <li>📚 Matérias</li>
+        <li>📝 Tarefas</li>
+        <li>👥 Turma</li>
+        <li>📊 Notas</li>
+        <li>⚙️ Config.</li>
+      </ul>
+    </aside>
+
+   
+    <main>
+      <h2>Galeria de Matérias — SI1N</h2>
+
+      <div class="galeria">
+
+        <div class="galeria-card">
+          <div class="icone">🌐</div>
+          <h3>Web</h3>
+          <p>HTML, CSS e Flexbox para construção de páginas.</p>
+        </div>
+
+        <div class="galeria-card">
+          <div class="icone">💻</div>
+          <h3>Programação</h3>
+          <p>Lógica e algoritmos com linguagens modernas.</p>
+        </div>
+
+        <div class="galeria-card">
+          <div class="icone">🗄️</div>
+          <h3>Banco de Dados</h3>
+          <p>Modelagem e consultas com SQL.</p>
+        </div>
+
+        <div class="galeria-card">
+          <div class="icone">📐</div>
+          <h3>Engenharia de Software</h3>
+          <p>Processos e boas práticas de desenvolvimento.</p>
+        </div>
+
+        <div class="galeria-card">
+          <div class="icone">🔢</div>
+          <h3>Matemática</h3>
+          <p>Fundamentos matemáticos para computação.</p>
+        </div>
+
+        <div class="galeria-card">
+          <div class="icone">📡</div>
+          <h3>Redes</h3>
+          <p>Infraestrutura e comunicação entre sistemas.</p>
+        </div>
+
+      </div>
+
+  
+      <div class="link-voltar">
+        <a href="nivel-medio.html">← Voltar ao Nível Médio</a>
+      </div>
+    </main>
+
+  </div>
+
+
+  <footer>
+    Feito por João Pedro Varejão da Silva — Turma SI1N — UVV 2026
+  </footer>
+
+</body>
+</html>
